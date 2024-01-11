@@ -89,7 +89,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy * 100:.2f}%')
 
 pos_label = 'original'  # Change this to the positive class label
-neg_label = 'tampered'
+neg_label = 'tampered'  # Change this to the negative class label
 precision = precision_score(y_test, y_pred, pos_label=pos_label)
 recall = recall_score(y_test, y_pred, pos_label=pos_label)
 
